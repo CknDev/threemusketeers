@@ -1,0 +1,1 @@
+canvas{position:relative;background-color:transparent}canvas.main{border:1px solid red;position:absolute;z-index:2}canvas.scene{position:absolute;z-index:1}.background{position:absolute;background-color:red}

@@ -1,0 +1,21 @@
+$debug: red;
+
+body {}
+canvas {
+    position: relative;
+    background-color: transparent;
+    &.main {
+        border: 1px solid $debug;
+        position: absolute;
+        z-index: 2;
+    }
+    &.scene {
+        position: absolute;
+        z-index: 1;
+    }
+}
+.background {
+    position: absolute;
+    background-color: $debug;
+}
+

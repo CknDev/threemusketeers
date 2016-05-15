@@ -4,6 +4,7 @@ import $ from './$'
 export function clear(entity) {
     const { x, w, y, h, ctx } = entity
     ctx.clearRect(x - 1, y - 1, w + 2, h + 2)
+    return entity
 }
 
 export function render(entity) {
@@ -13,6 +14,10 @@ export function render(entity) {
     ctx.strokeStyle = 'black'
     ctx.stroke()
     return entity
+}
+
+export function update(entity) {
+    return R.compose(render, clear)(entity)
 }
 
 export function toPx(integer) {

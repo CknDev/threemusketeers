@@ -6,7 +6,6 @@ import { getSceneAsset } from './asset'
 import * as image from './image'
 import * as renderer from './render'
 
-
 function create(name, id, state) {
     const [sx, sy, dx, dy] = Array(4).fill(0)
     const dw = config.canvas.width

@@ -1,1 +1,1 @@
-canvas{position:relative;background-color:transparent}canvas.main{border:1px solid red;position:absolute;z-index:2}canvas.scene{position:absolute;z-index:1}.background{position:absolute;background-color:red}
+canvas{position:relative;background-color:transparent}.background,canvas.enemies,canvas.main,canvas.scene{position:absolute}canvas.main{border:1px solid red;z-index:3}canvas.enemies{z-index:2}canvas.scene{z-index:1}.background{background-color:red}

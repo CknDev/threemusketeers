@@ -47,7 +47,8 @@ const script = () => scriptify(paths.script.src,
                                paths.script.dest)
 
 export function watch() {
-    gulp.watch(paths.script.src, gulp.series(script))
+    gulp.watch(path.join(__dirname, 'src', 'scripts', '*.js'),
+               gulp.series(script))
     gulp.watch(paths.style.src, gulp.series(style))
 }
 
